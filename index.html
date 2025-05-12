@@ -28,7 +28,7 @@
             <h1>GO</h1>
             <p>Neffex</p>
 
-            <audio controls>
+            <audio id="song">
                 <source src="media/Go-NEFFEX.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
@@ -37,10 +37,9 @@
                 <div><span class="material-symbols-outlined">
                     keyboard_double_arrow_left
                 </span></div>
-                <div><span class="material-symbols-outlined">
-                    <span class="material-symbols-outlined">
-                    play_arrow
-                </span>
+                <div onclick="playPause()"><span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" id="ctrlIcon">
+                    pause
                 </span></div>
                 <div><span class="material-symbols-outlined">
                     keyboard_double_arrow_right
@@ -49,6 +48,7 @@
 
         </div>
     </div>
+<script src="script.js"></script>    
 </body>
 
 </html>
