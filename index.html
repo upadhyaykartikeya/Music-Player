@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
+
 <body>
     <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_left
+                    </span>
+                </div>
+                <div class="circle">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </nav>
+            <img src="media/image.png" class="song-img">
+            <h1>GO</h1>
+            <p>Neffex</p>
 
+            <audio controls>
+                <source src="media/Go-NEFFEX.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><span class="material-symbols-outlined">
+                    keyboard_double_arrow_left
+                </span></div>
+                <div><span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined">
+                    play_arrow
+                </span>
+                </span></div>
+                <div><span class="material-symbols-outlined">
+                    keyboard_double_arrow_right
+                </span></div>
+            </div>
+
+        </div>
     </div>
 </body>
+
 </html>
